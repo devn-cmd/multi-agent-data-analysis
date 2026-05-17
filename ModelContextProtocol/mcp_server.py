@@ -3,8 +3,8 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp import types
 from pipeline.graph import run_pipeline_from_df, run_pipeline_from_file
-from mcp.gdrive_connector import fetch_csv_from_drive, save_report_to_drive
-from mcp.slack_connector import post_report_to_slack
+from ModelContextProtocol.gdrive_connector import fetch_csv_from_drive, save_report_to_drive
+from ModelContextProtocol.slack_connector import post_report_to_slack
 
 app = Server("data-pipeline-mcp")
 
@@ -66,7 +66,7 @@ async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
         )]
 
     elif name == "run_slack_triggered_analysis":
-        from mcp.slack_connector import get_latest_trigger_message, extract_filename_from_message, post_error_to_slack
+        from ModelContextProtocol.slack_connector import get_latest_trigger_message, extract_filename_from_message, post_error_to_slack
         msg = get_latest_trigger_message()
         if not msg:
             return [types.TextContent(type="text", text="No 'analyze' trigger found in Slack.")]
@@ -90,7 +90,13 @@ async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
 
 async def main():
     async with stdio_server() as (read_stream, write_stream):
-        await app.run(read_stream, write_stream, app.create_initialization_options())
+        await app.run(
+            read_stream,
+            write_stream,
+            app.create_initialization_options(),
+        )
 
 if __name__ == "__main__":
+    # Increase timeout to 300 seconds (5 minutes) to allow Ollama to finish
+    import asyncio
     asyncio.run(main())
