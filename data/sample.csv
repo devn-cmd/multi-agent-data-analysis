@@ -1,0 +1,165 @@
+order_id,date,zone,sku,product,quantity,unit_price,revenue,salesperson
+A-2068,2024-03-11,West,SKU-634,Sugar Fine Grade 50kg,25,396.35,9908.75,Deepak Joshi
+A-2104,2024-03-20,East,SKU-634,Sugar Fine Grade 50kg,52,376.43,19574.36,Ravi Kumar
+A-2024,2024-03-30,South,SKU-421,Toor Dal 5kg,16,620.07,9921.12,Meena Pillai
+A-2070,2024-03-04,East,SKU-318,Whole Wheat Atta 10kg,38,470.82,17891.16,Sunita Sharma
+A-2015,2024-03-15,West,SKU-318,Whole Wheat Atta 10kg,21,451.43,9480.03,Deepak Joshi
+A-2091,2024-03-14,South,SKU-634,Sugar Fine Grade 50kg,32,364.46,11662.72,Priya Nair
+A-2025,2024-03-29,North,SKU-047,Premium Basmati Rice 25kg,80,2395.6,191648.0,Vikram Singh
+A-2041,2024-03-13,North,SKU-047,Premium Basmati Rice 25kg,79,2179.56,172185.24,Arjun Mehta
+A-2005,2024-03-31,East,SKU-112,Cold Press Coconut Oil 5L,11,1352.7,14879.7,Ravi Kumar
+A-2091,2024-03-14,South,SKU-634,Sugar Fine Grade 50kg,32,364.46,11662.72,Priya Nair
+A-2009,2024-03-28,East,SKU-922,Iodised Salt 1kg,62,93.03,5767.86,Ravi Kumar
+A-2066,2024-03-08,West,SKU-203,Organic Turmeric Powder 1kg,18,584.02,10512.36,Sunita Sharma
+A-2050,2024-03-19,North,SKU-047,Premium Basmati Rice 25kg,43,2398.83,103149.69,
+A-2007,2024-03-03,West,SKU-421,Toor Dal 5kg,33,686.24,22645.92,Anita Rao
+A-2119,2024-03-18,East,SKU-318,Whole Wheat Atta 10kg,43,466.46,20057.78,Sunita Sharma
+A-2104,2024-03-20,East,SKU-634,Sugar Fine Grade 50kg,52,376.43,19574.36,Ravi Kumar
+A-2101,2024-03-25,East,SKU-112,Cold Press Coconut Oil 5L,9,1391.46,12523.14,Ravi Kumar
+A-2075,2024-03-20,West,SKU-634,Sugar Fine Grade 50kg,36,374.15,13469.4,Sunita Sharma
+A-2017,2024-03-25,South,SKU-421,Toor Dal 5kg,11,625.65,6882.15,Priya Nair
+A-2043,2024-03-07,West,SKU-047,Premium Basmati Rice 25kg,58,2390.61,138655.38,Anita Rao
+A-2009,2024-03-28,East,SKU-922,Iodised Salt 1kg,62,93.03,5767.86,Ravi Kumar
+A-2082,2024-03-21,West,SKU-318,Whole Wheat Atta 10kg,47,495.01,23265.47,Sunita Sharma
+A-2047,2024-03-20,South,SKU-421,Toor Dal 5kg,22,629.84,13856.48,Priya Nair
+A-2010,2024-03-07,East,SKU-047,Premium Basmati Rice 25kg,67,2301.05,154170.35,Sanjay Patel
+A-2117,2024-03-15,West,SKU-589,Sunflower Oil 15L,8,2137.88,17103.04,Anita Rao
+A-2064,2024-03-26,West,SKU-701,Instant Oats 2kg,11,512.34,5635.74,Deepak Joshi
+A-2083,2024-03-06,North,SKU-701,Instant Oats 2kg,23,562.37,12934.51,Arjun Mehta
+A-2112,2024-03-27,East,SKU-203,Organic Turmeric Powder 1kg,22,738.89,16255.58,Ravi Kumar
+A-2086,2024-03-29,West,SKU-589,Sunflower Oil 15L,20,2051.43,41028.6,Deepak Joshi
+A-2052,2024-03-15,South,SKU-203,Organic Turmeric Powder 1kg,25,721.74,,Priya Nair
+A-2044,2024-03-02,North,SKU-634,Sugar Fine Grade 50kg,47,375.05,17627.35,Arjun Mehta
+A-2087,2024-03-28,West,SKU-815,Chana Dal 5kg,16,627.47,10039.52,Deepak Joshi
+A-2037,2024-03-05,South,SKU-047,Premium Basmati Rice 25kg,35,2226.56,77929.6,Kavitha Iyer
+A-2092,2024-03-13,West,SKU-047,Premium Basmati Rice 25kg,58,2371.45,137544.1,Anita Rao
+A-2093,2024-03-13,North,SKU-815,Chana Dal 5kg,38,627.7,23852.6,Deepak Joshi
+A-2072,2024-03-31,South,SKU-203,Organic Turmeric Powder 1kg,17,692.92,11779.64,Priya Nair
+A-2007,2024-03-03,West,SKU-421,Toor Dal 5kg,33,686.24,22645.92,Anita Rao
+A-2058,2024-03-18,West,SKU-421,Toor Dal 5kg,14,621.16,8696.24,Anita Rao
+A-2103,2024-03-19,South,SKU-318,Whole Wheat Atta 10kg,25,515.82,12895.5,Priya Nair
+A-2090,2024-03-05,East,SKU-815,Chana Dal 5kg,20,595.08,11901.6,Ravi Kumar
+A-2102,2024-03-27,North,SKU-922,Iodised Salt 1kg,60,90.61,5436.6,Arjun Mehta
+A-2031,2024-03-03,South,SKU-421,Toor Dal 5kg,10,704.94,7049.4,Priya Nair
+A-2016,2024-03-29,East,SKU-634,Sugar Fine Grade 50kg,37,375.01,13875.37,
+A-2109,2024-03-27,East,SKU-047,Premium Basmati Rice 25kg,55,2247.06,123588.3,Sanjay Patel
+A-2073,2024-03-24,East,SKU-589,Sunflower Oil 15L,16,2170.01,34720.16,Ravi Kumar
+A-2084,2024-03-30,West,SKU-047,Premium Basmati Rice 25kg,53,2354.5,124788.5,Sunita Sharma
+A-2003,2024-03-21,North,SKU-421,Toor Dal 5kg,27,704.16,19012.32,Deepak Joshi
+A-2079,2024-03-22,North,SKU-701,Instant Oats 2kg,26,517.94,13466.44,Arjun Mehta
+A-2035,2024-03-15,West,SKU-203,Organic Turmeric Powder 1kg,14,726.85,10175.9,Anita Rao
+A-2025,2024-03-29,North,SKU-047,Premium Basmati Rice 25kg,80,2395.6,,Vikram Singh
+A-2015,2024-03-15,West,SKU-318,Whole Wheat Atta 10kg,21,451.43,9480.03,Deepak Joshi
+A-2110,2024-03-23,East,SKU-589,Sunflower Oil 15L,10,1945.9,19459.0,Sanjay Patel
+A-2048,2024-03-22,East,SKU-815,Chana Dal 5kg,16,651.62,10425.92,Ravi Kumar
+A-2045,2024-03-03,South,SKU-047,Premium Basmati Rice 25kg,28,2355.4,65951.2,Meena Pillai
+A-2020,2024-03-25,North,SKU-634,Sugar Fine Grade 50kg,53,356.01,18868.53,Deepak Joshi
+A-2040,2024-03-16,South,SKU-047,Premium Basmati Rice 25kg,39,2164.12,84400.68,Kavitha Iyer
+A-2024,2024-03-30,South,SKU-421,Toor Dal 5kg,16,620.07,9921.12,Meena Pillai
+A-2027,2024-03-25,North,SKU-922,Iodised Salt 1kg,96,93.77,9001.92,
+A-2095,2024-03-14,South,SKU-318,Whole Wheat Atta 10kg,23,478.85,11013.55,Kavitha Iyer
+A-2011,2024-03-18,North,SKU-589,Sunflower Oil 15L,11,2118.74,23306.14,Arjun Mehta
+A-2051,2024-03-30,South,SKU-421,Toor Dal 5kg,11,661.88,7280.68,Priya Nair
+A-2026,2024-03-31,South,SKU-047,Premium Basmati Rice 25kg,49,2123.63,104057.87,Meena Pillai
+A-2098,2024-03-06,West,SKU-047,Premium Basmati Rice 25kg,50,2115.09,105754.5,Anita Rao
+A-2069,2024-03-02,East,SKU-047,Premium Basmati Rice 25kg,55,2132.52,117288.6,Sanjay Patel
+A-2014,2024-03-29,South,SKU-815,Chana Dal 5kg,11,651.79,7169.69,Meena Pillai
+A-2045,2024-03-03,South,SKU-047,Premium Basmati Rice 25kg,28,2355.4,65951.2,Meena Pillai
+A-2071,2024-03-01,East,SKU-047,Premium Basmati Rice 25kg,72,2255.98,162430.56,Sanjay Patel
+A-2059,2024-03-19,South,SKU-421,Toor Dal 5kg,18,686.3,12353.4,Kavitha Iyer
+A-2065,2024-03-28,North,SKU-203,Organic Turmeric Powder 1kg,21,660.02,,Arjun Mehta
+A-2106,2024-03-13,East,SKU-421,Toor Dal 5kg,18,732.98,13193.64,Sanjay Patel
+A-2085,2024-03-20,West,SKU-589,Sunflower Oil 15L,19,1995.19,37908.61,Deepak Joshi
+A-2053,2024-03-10,North,SKU-589,Sunflower Oil 15L,10,2179.53,21795.3,Deepak Joshi
+A-2035,2024-03-15,West,SKU-203,Organic Turmeric Powder 1kg,14,726.85,10175.9,Anita Rao
+A-2049,2024-03-10,West,SKU-047,Premium Basmati Rice 25kg,73,2237.17,163313.41,Deepak Joshi
+A-2057,2024-03-21,North,SKU-047,Premium Basmati Rice 25kg,48,2393.94,114909.12,Arjun Mehta
+A-2054,2024-03-24,South,SKU-112,Cold Press Coconut Oil 5L,10,1310.64,13106.4,Priya Nair
+A-2061,2024-03-29,North,SKU-203,Organic Turmeric Powder 1kg,49,728.7,35706.3,Deepak Joshi
+A-2081,2024-03-19,West,SKU-318,Whole Wheat Atta 10kg,40,455.55,18222.0,Deepak Joshi
+A-2070,2024-03-04,East,SKU-318,Whole Wheat Atta 10kg,38,470.82,17891.16,Sunita Sharma
+A-2119,2024-03-18,East,SKU-318,Whole Wheat Atta 10kg,43,466.46,20057.78,Sunita Sharma
+A-2099,2024-03-25,South,SKU-318,Whole Wheat Atta 10kg,20,510.37,10207.4,Kavitha Iyer
+A-2029,2024-03-22,South,SKU-634,Sugar Fine Grade 50kg,29,378.99,10990.71,Kavitha Iyer
+A-2008,2024-03-03,East,SKU-421,Toor Dal 5kg,19,625.5,11884.5,Sunita Sharma
+A-2004,2024-03-25,West,SKU-421,Toor Dal 5kg,30,716.7,21501.0,
+A-2033,2024-03-24,West,SKU-112,Cold Press Coconut Oil 5L,20,1387.1,27742.0,
+A-2038,2024-03-15,South,SKU-815,Chana Dal 5kg,23,660.8,15198.4,Priya Nair
+A-2043,2024-03-07,West,SKU-047,Premium Basmati Rice 25kg,58,2390.61,,Anita Rao
+A-2118,2024-03-10,South,SKU-318,Whole Wheat Atta 10kg,22,493.12,,Priya Nair
+A-2111,2024-03-25,East,SKU-589,Sunflower Oil 15L,15,2045.05,30675.75,Sunita Sharma
+A-2055,2024-03-22,South,SKU-634,Sugar Fine Grade 50kg,23,378.05,8695.15,Priya Nair
+A-2088,2024-03-25,South,SKU-701,Instant Oats 2kg,12,559.99,6719.88,Kavitha Iyer
+A-2057,2024-03-21,North,SKU-047,Premium Basmati Rice 25kg,48,2393.94,114909.12,Arjun Mehta
+A-2116,2024-03-14,South,SKU-047,Premium Basmati Rice 25kg,50,2246.57,,Meena Pillai
+A-2111,2024-03-25,East,SKU-589,Sunflower Oil 15L,15,2045.05,30675.75,Sunita Sharma
+A-2032,2024-03-03,North,SKU-815,Chana Dal 5kg,19,631.42,11996.98,Vikram Singh
+A-2001,2024-03-08,North,SKU-047,Premium Basmati Rice 25kg,76,2166.96,164688.96,Vikram Singh
+A-2064,2024-03-26,West,SKU-701,Instant Oats 2kg,11,512.34,,Deepak Joshi
+A-2094,2024-03-18,East,SKU-634,Sugar Fine Grade 50kg,44,384.85,16933.4,Sanjay Patel
+A-2046,2024-03-13,North,SKU-634,Sugar Fine Grade 50kg,65,347.19,22567.35,Arjun Mehta
+A-2034,2024-03-26,West,SKU-112,Cold Press Coconut Oil 5L,10,1281.41,12814.1,Anita Rao
+A-2049,2024-03-10,West,SKU-047,Premium Basmati Rice 25kg,73,2237.17,163313.41,Deepak Joshi
+A-2030,2024-03-03,West,SKU-047,Premium Basmati Rice 25kg,59,2201.43,129884.37,Sunita Sharma
+A-2054,2024-03-24,South,SKU-112,Cold Press Coconut Oil 5L,10,1310.64,13106.4,Priya Nair
+A-2113,2024-03-19,West,SKU-112,Cold Press Coconut Oil 5L,16,1322.07,21153.12,Anita Rao
+A-2056,2024-03-03,West,SKU-112,Cold Press Coconut Oil 5L,26,1326.86,34498.36,Sunita Sharma
+A-2291,2024-03-15,North,SKU-047,Premium Basmati Rice 25kg,200,2350.0,470000.0,Arjun Mehta
+A-2061,2024-03-29,North,SKU-203,Organic Turmeric Powder 1kg,49,728.7,,Deepak Joshi
+A-2019,2024-03-28,West,SKU-421,Toor Dal 5kg,30,733.09,21992.7,Deepak Joshi
+A-2084,2024-03-30,West,SKU-047,Premium Basmati Rice 25kg,53,2354.5,124788.5,Sunita Sharma
+A-2107,2024-03-28,South,SKU-047,Premium Basmati Rice 25kg,52,2305.28,119874.56,Kavitha Iyer
+A-2062,2024-03-28,South,SKU-815,Chana Dal 5kg,22,596.25,13117.5,Priya Nair
+A-2067,2024-03-31,East,SKU-112,Cold Press Coconut Oil 5L,16,1354.67,21674.72,Ravi Kumar
+A-2039,2024-03-27,North,SKU-047,Premium Basmati Rice 25kg,44,2104.43,92594.92,Deepak Joshi
+A-2113,2024-03-19,West,SKU-112,Cold Press Coconut Oil 5L,16,1322.07,21153.12,Anita Rao
+A-2068,2024-03-11,West,SKU-634,Sugar Fine Grade 50kg,25,396.35,9908.75,Deepak Joshi
+A-2120,2024-03-04,East,SKU-203,Organic Turmeric Powder 1kg,23,702.62,16160.26,Ravi Kumar
+A-2062,2024-03-28,South,SKU-815,Chana Dal 5kg,22,596.25,13117.5,Priya Nair
+A-2024,2024-03-30,South,SKU-421,Toor Dal 5kg,16,620.07,9921.12,Meena Pillai
+A-2001,2024-03-08,North,SKU-047,Premium Basmati Rice 25kg,76,2166.96,164688.96,Vikram Singh
+A-2073,2024-03-24,East,SKU-589,Sunflower Oil 15L,16,2170.01,34720.16,Ravi Kumar
+A-2065,2024-03-28,North,SKU-203,Organic Turmeric Powder 1kg,21,660.02,13860.42,Arjun Mehta
+A-2090,2024-03-05,East,SKU-815,Chana Dal 5kg,20,595.08,11901.6,Ravi Kumar
+A-2008,2024-03-03,East,SKU-421,Toor Dal 5kg,19,625.5,11884.5,Sunita Sharma
+A-2105,2024-03-31,North,SKU-701,Instant Oats 2kg,21,517.99,10877.79,Arjun Mehta
+A-2089,2024-03-23,South,SKU-112,Cold Press Coconut Oil 5L,10,1257.15,12571.5,Priya Nair
+A-2069,2024-03-02,East,SKU-047,Premium Basmati Rice 25kg,55,2132.52,117288.6,Sanjay Patel
+A-2077,2024-03-22,East,SKU-318,Whole Wheat Atta 10kg,35,457.1,15998.5,Sanjay Patel
+A-2078,2024-03-17,South,SKU-589,Sunflower Oil 15L,13,2099.16,27289.08,Kavitha Iyer
+A-2013,2024-03-26,North,SKU-112,Cold Press Coconut Oil 5L,16,1263.09,20209.44,Arjun Mehta
+A-2026,2024-03-31,South,SKU-047,Premium Basmati Rice 25kg,49,2123.63,,Meena Pillai
+A-2042,2024-03-31,West,SKU-112,Cold Press Coconut Oil 5L,25,1346.1,33652.5,Deepak Joshi
+A-2114,2024-03-06,North,SKU-318,Whole Wheat Atta 10kg,34,479.0,16286.0,Vikram Singh
+A-2096,2024-03-30,West,SKU-634,Sugar Fine Grade 50kg,45,347.66,15644.7,Anita Rao
+A-2012,2024-03-23,West,SKU-112,Cold Press Coconut Oil 5L,23,1311.39,30161.97,Deepak Joshi
+A-2115,2024-03-23,East,SKU-203,Organic Turmeric Powder 1kg,31,729.62,22618.22,Sunita Sharma
+A-2076,2024-03-14,North,SKU-203,Organic Turmeric Powder 1kg,36,713.58,25688.88,Arjun Mehta
+A-2002,2024-03-01,North,SKU-421,Toor Dal 5kg,21,631.24,13256.04,Arjun Mehta
+A-2097,2024-03-19,North,SKU-815,Chana Dal 5kg,14,646.3,9048.2,Deepak Joshi
+A-2006,2024-03-20,West,SKU-047,Premium Basmati Rice 25kg,35,2179.36,76277.6,Anita Rao
+A-2023,2024-03-20,East,SKU-701,Instant Oats 2kg,15,507.9,,Sunita Sharma
+A-2020,2024-03-25,North,SKU-634,Sugar Fine Grade 50kg,53,356.01,18868.53,Deepak Joshi
+A-2100,2024-03-16,West,SKU-112,Cold Press Coconut Oil 5L,19,1203.88,22873.72,Sunita Sharma
+A-2022,2024-03-17,East,SKU-922,Iodised Salt 1kg,99,117.38,11620.62,Ravi Kumar
+A-2074,2024-03-10,West,SKU-203,Organic Turmeric Powder 1kg,18,674.25,,Deepak Joshi
+A-2018,2024-03-20,South,SKU-701,Instant Oats 2kg,11,495.72,5452.92,Kavitha Iyer
+A-2076,2024-03-14,North,SKU-203,Organic Turmeric Powder 1kg,36,713.58,,Arjun Mehta
+A-2063,2024-03-06,South,SKU-815,Chana Dal 5kg,13,653.66,8497.58,Priya Nair
+A-2028,2024-03-14,South,SKU-112,Cold Press Coconut Oil 5L,21,1392.87,29250.27,Meena Pillai
+A-2048,2024-03-22,East,SKU-815,Chana Dal 5kg,16,651.62,10425.92,Ravi Kumar
+A-2080,2024-03-16,South,SKU-047,Premium Basmati Rice 25kg,50,2283.38,114169.0,Priya Nair
+A-2040,2024-03-16,South,SKU-047,Premium Basmati Rice 25kg,39,2164.12,84400.68,Kavitha Iyer
+A-2056,2024-03-03,West,SKU-112,Cold Press Coconut Oil 5L,26,1326.86,34498.36,Sunita Sharma
+A-2021,2024-03-15,North,SKU-112,Cold Press Coconut Oil 5L,28,1200.65,33618.2,Arjun Mehta
+A-2103,2024-03-19,South,SKU-318,Whole Wheat Atta 10kg,25,515.82,12895.5,Priya Nair
+A-2058,2024-03-18,West,SKU-421,Toor Dal 5kg,14,621.16,8696.24,Anita Rao
+A-2108,2024-03-22,North,SKU-203,Organic Turmeric Powder 1kg,32,643.0,20576.0,Vikram Singh
+A-2060,2024-03-29,North,SKU-203,Organic Turmeric Powder 1kg,38,640.83,24351.54,Arjun Mehta
+A-2056,2024-03-03,West,SKU-112,Cold Press Coconut Oil 5L,26,1326.86,34498.36,Sunita Sharma
+A-2057,2024-03-21,North,SKU-047,Premium Basmati Rice 25kg,48,2393.94,114909.12,Arjun Mehta
+A-2045,2024-03-03,South,SKU-047,Premium Basmati Rice 25kg,28,2355.4,65951.2,Meena Pillai
+A-2074,2024-03-10,West,SKU-203,Organic Turmeric Powder 1kg,18,674.25,12136.5,Deepak Joshi
+A-2069,2024-03-02,East,SKU-047,Premium Basmati Rice 25kg,55,2132.52,117288.6,Sanjay Patel
+A-2036,2024-03-11,North,SKU-047,Premium Basmati Rice 25kg,45,2340.18,105308.1,Deepak Joshi
+A-2093,2024-03-13,North,SKU-815,Chana Dal 5kg,38,627.7,23852.6,Deepak Joshi

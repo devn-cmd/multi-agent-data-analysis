@@ -1,0 +1,13 @@
+langchain
+langgraph
+langchain-ollama
+crewai
+fastapi
+uvicorn
+pandas
+chromadb
+streamlit
+python-multipart
+mcp
+
+
