@@ -1,7 +1,11 @@
 from langchain_ollama import OllamaLLM
 
-llm=OllamaLLM(model="qwen3:4b-q4_K_M")
-
+#llm=OllamaLLM(model="qwen3:4b-q4_K_M")
+import os
+llm = OllamaLLM(
+    model=os.getenv("OLLAMA_MODEL", "qwen3:4b-q4_K_M"),
+    base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+)
 def reporter_agent(state: dict) -> dict:
     report_prompt=f"""
     You are a data analyst writing a bussiness report.

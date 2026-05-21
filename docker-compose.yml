@@ -1,34 +1,20 @@
-# version: "3.9"
-
-# services:
-# #  ollama:
-#  #   image: ollama/ollama
-#   #  container_name: ollama
-#    # ports:
-#     #  - "11434:11434"
-#     #volumes:
-#      # - ollama_data:/root/.ollama
-
-#   pipeline:
-#     build: .
-#     container_name: pipeline-api
-#     ports:
-#       - "8000:8000"
-#     environment:
-#       - OLLAMA_BASE_URL=http://localhost:11434
-# #    depends_on:
-#  #     - ollama
-
-# volumes:
-#   ollama_data:.
 version: "3.9"
 services:
+ # ollama:
+  #  image: ollama/ollama
+   # container_name: ollama
+    #ports:
+     # - "11434:11434"
+   # volumes:
+    #  - ollama_data:/root/.ollama
+
   pipeline:
     build: .
     container_name: pipeline-api
-    network_mode: host
+    ports:
+      - "8000:8000"
     environment:
-      - OLLAMA_BASE_URL=http://localhost:11434
+      - OLLAMA_BASE_URL=http://172.17.0.1:11434
       - GDRIVE_CREDENTIALS_PATH=/app/credentials.json
       - GDRIVE_FOLDER_ID=${GDRIVE_FOLDER_ID}
       - SLACK_BOT_TOKEN=${SLACK_BOT_TOKEN}
@@ -36,6 +22,9 @@ services:
     volumes:
       - ./credentials.json:/app/credentials.json:ro
       - ./token.json:/app/token.json
-
+    #depends_on:
+     # - ollama
+    extra_hosts:
+      - "host-gateway:host-gateway"
 volumes:
   ollama_data:

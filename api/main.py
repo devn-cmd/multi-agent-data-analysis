@@ -24,8 +24,8 @@ async def analyze(file: UploadFile = File(...)):
 @app.post("/trigger/slack")
 async def slack_trigger():
     """Called by Cline or a Slack webhook to run the pipeline."""
-    from mcp.slack_connector import get_latest_trigger_message, extract_filename_from_message, post_report_to_slack, post_error_to_slack
-    from mcp.gdrive_connector import fetch_csv_from_drive
+    from ModelContextProtocol.slack_connector import get_latest_trigger_message, extract_filename_from_message, post_report_to_slack, post_error_to_slack
+    from ModelContextProtocol.gdrive_connector import fetch_csv_from_drive
 
     msg = get_latest_trigger_message()
     if not msg:
