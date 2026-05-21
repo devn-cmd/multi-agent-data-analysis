@@ -21,13 +21,20 @@ async def analyze(file: UploadFile = File(...)):
         "final_report": result["final_report"]
     }))
 
-@app.post("/trigger/slack")
-async def slack_trigger():
-    """Called by Cline or a Slack webhook to run the pipeline."""
-    from ModelContextProtocol.slack_connector import get_latest_trigger_message, extract_filename_from_message, post_report_to_slack, post_error_to_slack
+@app.post("/trigger/telegram") # Renamed for clarity
+async def telegram_trigger():
+    """Called by Cline or a webhook to run the pipeline."""
+    # FIXED: Updated function names to match your telegram_connector.py
+    from ModelContextProtocol.telegram_connector import (
+        get_latest_trigger_message, 
+        extract_filename_from_message, 
+        post_report_to_telegram, 
+        post_error_to_telegram
+    )
     from ModelContextProtocol.gdrive_connector import fetch_csv_from_drive
 
-    msg = get_latest_trigger_message()
+    # FIXED: Added 'await' because get_latest_trigger_message is an async function
+    msg = await get_latest_trigger_message()
     if not msg:
         return JSONResponse({"status": "no_trigger"})
 
@@ -36,10 +43,29 @@ async def slack_trigger():
         return JSONResponse({"status": "no_filename_in_message"})
 
     try:
-        df = fetch_csv_from_drive(file_name)
-        result = run_pipeline_from_df(df, source="slack", triggered_by=file_name)
-        post_report_to_slack(result["final_report"], triggered_by=file_name)
-        return JSONResponse({"status": "success", "file": file_name})
+            # 1. Fetch the data from Drive
+            df = fetch_csv_from_drive(file_name)
+            result = run_pipeline_from_df(df, source="telegram", triggered_by=file_name)
+            
+            # 2. Send the report to your Telegram
+            await post_report_to_telegram(result["final_report"], triggered_by=file_name)
+            
+            # 3. Save the report back to Google Drive using your exact function
+            from ModelContextProtocol.gdrive_connector import save_report_to_drive
+            
+            # Generate a clear report name (e.g., sample_Report.txt)
+            report_filename = file_name.replace(".csv", "_Report.txt")
+            
+            # This calls your function, uploads the text, and grabs the shareable URL
+            drive_url = save_report_to_drive(report=result["final_report"], report_name=report_filename)
+            
+            # 4. Return success including the new Drive link
+            return JSONResponse({
+                "status": "success", 
+                "file": file_name, 
+                "drive_url": drive_url
+            })
+            
     except Exception as e:
-        post_error_to_slack(str(e))
+        await post_error_to_telegram(str(e))
         return JSONResponse({"status": "error", "message": str(e)}, status_code=500)

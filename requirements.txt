@@ -9,5 +9,8 @@ chromadb
 streamlit
 python-multipart
 mcp
-
-
+python-telegram-bot>=20.0
+google-auth-oauthlib>=1.0.0
+google-api-python-client>=2.0.0
+matplotlib>=3.7.0
+playwright>=1.40.0

@@ -17,8 +17,8 @@ services:
       - OLLAMA_BASE_URL=http://172.17.0.1:11434
       - GDRIVE_CREDENTIALS_PATH=/app/credentials.json
       - GDRIVE_FOLDER_ID=${GDRIVE_FOLDER_ID}
-      - SLACK_BOT_TOKEN=${SLACK_BOT_TOKEN}
-      - SLACK_CHANNEL_ID=${SLACK_CHANNEL_ID}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
     volumes:
       - ./credentials.json:/app/credentials.json:ro
       - ./token.json:/app/token.json

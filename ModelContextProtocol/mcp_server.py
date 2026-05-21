@@ -4,7 +4,9 @@ from mcp.server.stdio import stdio_server
 from mcp import types
 from pipeline.graph import run_pipeline_from_df, run_pipeline_from_file
 from ModelContextProtocol.gdrive_connector import fetch_csv_from_drive, save_report_to_drive
-from ModelContextProtocol.slack_connector import post_report_to_slack
+
+# UPDATED: Import Telegram connectors instead of Slack
+from telegram_connector import post_report_to_telegram
 
 app = Server("data-pipeline-mcp")
 
@@ -29,14 +31,14 @@ async def list_tools() -> list[types.Tool]:
                 "type": "object",
                 "properties": {
                     "file_name": {"type": "string", "description": "Name of the CSV file in Drive"},
-                    "post_to_slack": {"type": "boolean", "description": "Post report to Slack after analysis"}
+                    "post_to_telegram": {"type": "boolean", "description": "Post report to Telegram after analysis"}
                 },
                 "required": ["file_name"]
             }
         ),
         types.Tool(
-            name="run_slack_triggered_analysis",
-            description="Check Slack for an 'analyze' message, fetch the mentioned CSV from Drive, run pipeline, post report back",
+            name="run_telegram_triggered_analysis",
+            description="Check Telegram for an 'analyze' message, fetch the mentioned CSV from Drive, run pipeline, post report back",
             inputSchema={"type": "object", "properties": {}}
         )
     ]
@@ -57,19 +59,22 @@ async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
 
         drive_url = save_report_to_drive(report, f"report_{file_name}")
 
-        if arguments.get("post_to_slack"):
-            post_report_to_slack(report, triggered_by=file_name)
+        # UPDATED: Changed to post_to_telegram and added await
+        if arguments.get("post_to_telegram"):
+            await post_report_to_telegram(report, triggered_by=file_name)
 
         return [types.TextContent(
             type="text",
             text=f"{report}\n\n---\nReport saved to Drive: {drive_url}"
         )]
 
-    elif name == "run_slack_triggered_analysis":
-        from ModelContextProtocol.slack_connector import get_latest_trigger_message, extract_filename_from_message, post_error_to_slack
-        msg = get_latest_trigger_message()
+    elif name == "run_telegram_triggered_analysis":
+        # UPDATED: Dynamic imports point to telegram_connector and functions are now awaited
+        from telegram_connector import get_latest_trigger_message, extract_filename_from_message, post_error_to_telegram
+        
+        msg = await get_latest_trigger_message()
         if not msg:
-            return [types.TextContent(type="text", text="No 'analyze' trigger found in Slack.")]
+            return [types.TextContent(type="text", text="No 'analyze' trigger found in Telegram.")]
 
         file_name = extract_filename_from_message(msg)
         if not file_name:
@@ -77,12 +82,15 @@ async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
 
         try:
             df = fetch_csv_from_drive(file_name)
-            result = run_pipeline_from_df(df, source="slack", triggered_by=file_name)
+            result = run_pipeline_from_df(df, source="telegram", triggered_by=file_name)
             report = result["final_report"]
-            post_report_to_slack(report, triggered_by=file_name)
-            return [types.TextContent(type="text", text=f"Done. Report posted to Slack for '{file_name}'.")]
+            
+            # UPDATED: added await
+            await post_report_to_telegram(report, triggered_by=file_name)
+            return [types.TextContent(type="text", text=f"Done. Report posted to Telegram for '{file_name}'.")]
         except Exception as e:
-            post_error_to_slack(str(e))
+            # UPDATED: added await
+            await post_error_to_telegram(str(e))
             return [types.TextContent(type="text", text=f"Pipeline failed: {e}")]
 
     return [types.TextContent(type="text", text="Unknown tool.")]
@@ -97,6 +105,5 @@ async def main():
         )
 
 if __name__ == "__main__":
-    # Increase timeout to 300 seconds (5 minutes) to allow Ollama to finish
     import asyncio
     asyncio.run(main())

@@ -1,5 +1,7 @@
 from langchain_ollama import OllamaLLM
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 
 #llm=OllamaLLM(model="qwen3:4b-q4_K_M")
 import os
@@ -23,6 +25,12 @@ def analyst_agent(state: dict) ->dict:
     2. Identify any anomalies or outliers
     3. Print findings as clear text
     Use df as the variable name. Output only code, no explanations.
+
+    CRITICAL RULES:
+    - Use df as the variable name. 
+    - Output ONLY clean executable python code, no explanations.
+    - DO NOT import matplotlib, seaborn, or any visualization libraries.
+    - DO NOT attempt to plot graphs, charts, or render HTML. Text output only.
     """
     generated_code=llm.invoke(code_prompt)
 
